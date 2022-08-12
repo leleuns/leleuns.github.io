@@ -1,1 +1,290 @@
 /* Your SCSS here. */
+
+
+body {
+    margin: 0;
+    width: 100%;
+
+
+    
+}
+.header {
+    background-color: #6B5B95;
+    text-align:center;
+    color: white;
+    margin: 0px;
+    font-size:25px;
+}
+//Nav bar background and sizing
+#main-nav {
+
+    background-color: #FF6F61;
+    padding: 25px 10px ;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin:0;
+    font-family: monospace;
+    font-size: 20px;
+    //hovers above images
+    z-index: 1000;
+    
+  }
+  
+
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px;
+    line-height: 20px;
+
+
+  }
+
+  //Sticks navBar to top
+   #main-nav.sticky {
+    position: fixed;
+    top: 0;
+  }
+  //prevents the navbar from jumping ahead too much
+  .navbarOffsetMargin {
+    padding-top: 110px;
+  }
+  
+  //creates background color when highlighted and active
+  nav a.active {
+    color: black;
+    background: white;
+    border-radius: 5px;
+  }
+ //underlines each section when hovering over it
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+ 
+
+img.portrait{
+    margin-top: 90px;
+    width:300px;
+    border-radius: 10px;
+}
+ section#home {
+    background-color: #6B5B95;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 800px;
+    transition: 0.5s;
+  }
+
+section#portfolio{
+    background-color: #9B2335;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1500px;
+    transition:1s;
+
+}
+ 
+section#about_me{
+    background-color: #6B5B95;
+    text-align: center;
+    height: 1500px;
+    margin-top: 0;
+    transition: 1s;
+}
+
+section#contact{
+    background-color:white;
+    text-align: center;
+    height: 1000px;
+    transition: 1s;
+}
+
+
+  section{
+    margin: 0;
+  }
+  p{
+    margin:0;
+    color:black;
+    font-family: monospace;
+
+  }
+  
+
+* {
+ 
+
+box-sizing:border-box;
+}
+  
+  .carousel-container {
+    width: 46.6%;
+    margin: auto;
+    overflow: hidden;
+    
+
+  
+  }
+  .carousel-slide{
+    display:flex;
+    width:100%;
+ 
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position:relative;
+    
+
+  }
+  .buttons{
+
+    position: relative;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    
+    position:absolute;
+    top: 45%;
+    z-index: 1;
+    width: auto;
+    margin-top: 0px;
+    padding: 16px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    right: 1rem;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    left: 1rem;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  .three_column {
+
+
+    column-count: 3;
+    column-gap: 10px;
+    column-rule-style: solid;
+    column-rule-color: white;
+    padding-top: 150px;
+ 
+  }
+  h2 {
+    color:white;
+    margin:0;
+  }
+
+  img {
+    max-width:100%;
+    max-height:100%;
+ }
+
+ .image-fixer{
+  background-image:url(https://wallpaperaccess.com/full/96462.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+
+ }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+   
+.modal_container{
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity:0;
+
+  height: 100vh;
+  width: 100%;
+}
+.modal{
+  background-color: aqua;
+  width: 600px;
+  maX-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.modal_container.show{
+  pointer-events: auto;
+  opacity: 1;
+
+}
+
+
+
+
+
+
+ 
+  
+ 
+  @media
+  (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+  
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 11px;
+    }
+  }
+
+
+
+
+
