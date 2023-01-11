@@ -3,12 +3,12 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("main-nav").style.padding = "15px 5px";
-    document.getElementById("main-nav").style.fontSize = "15px";
+    document.getElementById("main-nav").style.padding = "10px 5px";
+    document.getElementById("main-nav").style.fontSize = "10px";
   
   } else {
-    document.getElementById("main-nav").style.padding = "25px 10px";
-    document.getElementById("main-nav").style.fontSize = "20px";
+    document.getElementById("main-nav").style.padding = "15px 10px";
+    document.getElementById("main-nav").style.fontSize = "15px";
   }
 }
 
