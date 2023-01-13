@@ -2,13 +2,13 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("main-nav").style.padding = "12px 5px";
-    document.getElementById("main-nav").style.fontSize = "12px";
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    document.getElementById("main-nav").style.padding = "14px 5px";
+    document.getElementById("main-nav").style.fontSize = "14px";
   
   } else {
-    document.getElementById("main-nav").style.padding = "15px 10px";
-    document.getElementById("main-nav").style.fontSize = "15px";
+    document.getElementById("main-nav").style.padding = "18px 10px";
+    document.getElementById("main-nav").style.fontSize = "18px";
   }
 }
 
