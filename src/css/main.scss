@@ -9,7 +9,7 @@ body {
     
 }
 .header {
-    background-color: #6B5B95;
+    background-color: #88B04B;
     text-align:center;
     color: white;
     margin: 0px;
@@ -18,7 +18,7 @@ body {
 //Nav bar background and sizing
 #main-nav {
 
-    background-color: #FF6F61;
+    background-color: #92A8D1;
     padding: 15px 10px ;
     text-align: left;
     width: 100%;
@@ -74,7 +74,7 @@ img.portrait{
     border-radius: 10px;
 }
  section#home {
-    background-color: #6B5B95;
+    background-color: #798EA4;
     text-align: center;
     color: white;
     font-family: monospace;
@@ -85,7 +85,7 @@ img.portrait{
   }
 
 section#portfolio{
-    background-color: #9B2335;
+    background-color: #34568B;
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -103,10 +103,12 @@ section#about_me{
 }
 
 section#contact{
-    background-color:white;
+    background-color:#92A8D1;
     text-align: center;
     height: 100px;
     transition: 1s;
+    margin-bottom: 0;
+
 }
 
 
@@ -209,7 +211,7 @@ box-sizing:border-box;
  }
 
  .image-fixer{
-  background-image:url(https://wallpaperaccess.com/full/96462.jpg);
+  background-color: #798EA4;
   background-repeat: no-repeat;
   background-attachment: fixed;
   
@@ -230,7 +232,7 @@ box-sizing:border-box;
 }
    
 .modal_container{
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,12 +246,14 @@ box-sizing:border-box;
   width: 100%;
 }
 .modal{
-  background-color: aqua;
+  background-color: #34568B;
   width: 600px;
   maX-width: 100%;
   padding: 30px 50px;
   border-radius: 5px;
   text-align: center;
+  z-index: 2000;
+  overflow:initial;
 
 }
 

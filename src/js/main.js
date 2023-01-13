@@ -3,8 +3,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("main-nav").style.padding = "10px 5px";
-    document.getElementById("main-nav").style.fontSize = "10px";
+    document.getElementById("main-nav").style.padding = "12px 5px";
+    document.getElementById("main-nav").style.fontSize = "12px";
   
   } else {
     document.getElementById("main-nav").style.padding = "15px 10px";
