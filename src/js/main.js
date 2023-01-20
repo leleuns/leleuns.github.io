@@ -52,7 +52,7 @@ const carouselImages = document.querySelectorAll('.carousel-slide img');
 const previousBtn = document.querySelector('#previousBtn');
 const nextBtn = document.querySelector('#nextBtn');
 //Counter
-let counter = 1;
+let counter = 3;
 const size = carouselImages[0].clientWidth;
 
 

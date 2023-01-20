@@ -62,9 +62,9 @@ body {
  
 
 img.portrait{
-    margin-top: 80px;
+    margin-top: 40px;
     width:300px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
  section#home {
     background-color: #798EA4;
@@ -75,7 +75,10 @@ img.portrait{
     font-size: 18px;
     transition: 0.5s;
    
+   
   }
+
+  
 
 section#portfolio{
     background-color: #34568B;
@@ -283,6 +286,11 @@ box-sizing:border-box;
   @media screen and (max-width: 600px) {
     body {
       font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    body {
+      font-size: 9px;
     }
   }
 
